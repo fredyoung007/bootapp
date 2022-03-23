@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Oops!</title>
+    <link rel="stylesheet" th:href="@{/style.css}"></link>
+  </head>
+
+  <html>
+    <div class="errorPage">
+      <span class="oops">Oops!</span><br/>
+      <img th:src="@{/miss.gif}"></img>
+      <p>There seems to be a problem with the page you requested 
+         (<span text="${path}"></span>).</p>
+      <p th:text="${'Status: ' + status}"></p>
+      <p th:text="${'Message: ' + message}"></p>
+      <p th:text="${'Stack Trace: ' + stackTrace}"></p>
+    </div>
+  </html>
+
+</html>
